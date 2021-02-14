@@ -106,3 +106,12 @@ app = Client('ayanami', api_id=TELEGRAM_API, api_hash=TELEGRAM_HASH, bot_token=B
 updater = tg.Updater(token=BOT_TOKEN,use_context=True)
 bot = updater.bot
 dispatcher = updater.dispatcher
+
+try:
+    SHORTENER = getConfig('SHORTENER')
+    SHORTENER_API = getConfig('SHORTENER_API')
+    if len(SHORTENER) == 0 or len(SHORTENER_API) == 0:
+        raise KeyError
+except KeyError:
+    SHORTENER = None
+    SHORTENER_API = None
