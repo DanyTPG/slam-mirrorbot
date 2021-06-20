@@ -210,6 +210,9 @@ sudo docker build . -t mirrorbot
 sudo docker run mirrorbot
 ```
 
+## Deploy on Railway
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FDanyTPG%2Fslam-mirrorbot%2Ftree%2Frlwy&plugins=postgresql)
+
 ## Deploying on Heroku
 
 - Give stars and Fork this repo then upload **token.pickle** to your forks
